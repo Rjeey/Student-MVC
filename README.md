@@ -9,5 +9,3 @@ so that everything worked, in mongodb you need to create a schem student and in 
 of info and sequences in the collection sequences you need to add a record
 db.sequences.insert ({"" _ id: " info "," sequences ": 0})
 it is necessary for generation id and on it there is a removal and change of records.
-
-In the near future everything will be fixed.
