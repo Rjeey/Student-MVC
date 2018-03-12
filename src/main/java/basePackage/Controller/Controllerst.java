@@ -29,7 +29,9 @@ public class Controllerst {
 
     @RequestMapping(value = "/add",method = RequestMethod.POST)
     public String addStudent(@ModelAttribute("student") Student student){
-        if(student.getId() == null)serviceStudent.add(student);
+        if(student.getId() == null) {
+            serviceStudent.add(student);
+        }
         else serviceStudent.update(student);
         return "redirect:/";
     }

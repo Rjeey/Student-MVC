@@ -11,7 +11,7 @@ import java.util.List;
 
 
 @Repository
-public class StudentDao {
+public class StudentDao implements DaoStudent {
     @Autowired
     private MongoOperations mongoOperations;
 

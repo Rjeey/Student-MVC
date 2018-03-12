@@ -1,6 +1,6 @@
 package basePackage.dao;
 
-import basePackage.Exeptions.SequenceExeption;
+import basePackage.exeptions.SequenceExeption;
 import basePackage.model.Sequence;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.FindAndModifyOptions;
@@ -12,7 +12,7 @@ import org.springframework.stereotype.Repository;
 
 
 @Repository
-public class SequenceDao {
+public class SequenceDao implements DaoSequence {
     @Autowired
     private MongoOperations mongoOperations;
 
